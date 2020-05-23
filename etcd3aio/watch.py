@@ -180,7 +180,8 @@ class Watcher(object):
         rq = etcdrpc.WatchRequest(cancel_request=cancel_watch)
         await self._request_queue.put(rq)
 
-    def _create_watch_request(self, key, range_end=None, start_revision=None,
+    @staticmethod
+    def _create_watch_request(key, range_end=None, start_revision=None,
                               progress_notify=False, filters=None,
                               prev_kv=False):
         create_watch = etcdrpc.WatchCreateRequest()
