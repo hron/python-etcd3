@@ -1,5 +1,7 @@
 # etcd client for asyncio
 
+![](https://github.com/hron/etcd3aio/workflows/Build/badge.svg)
+
 This project is based on based on based on [grpclib](https://github.com/vmagamedov/grpclib) and requires **Python >=3.8**.
 
 * Free software: Apache Software License 2.0
